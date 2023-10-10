@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello wasm-pack!</title>
+    <script src="./bootstrap.js"></script>
+    <style src="./styles.css"></style>
+  </head>
+  <body>
+    <h1>JSON formatter by alex</h1>
+    <div id="container">
+      <div id="settings">
+        <h2>Settings</h2>
+        <h3>Global settings</h3>
+        <label for="dark-mode">
+          <input type="checkbox" id="dark-mode" /> Enable dark mode
+        </label>
+        <h3>Input editor settings</h3>
+        <label for="input-line-numbers">
+          <input type="checkbox" id="input-line-numbers" /> Enable line numbers
+        </label>
+        <label for="input-word-wrap">
+          <input type="checkbox" id="input-word-wrap" checked /> Enable word-wrap
+        </label>
+        <h3>Formatted editor settings</h3>
+        <label for="output-line-numbers">
+          <input type="checkbox" id="output-line-numbers" checked /> Enable line numbers
+        </label>
+        <label for="output-word-wrap">
+          <input type="checkbox" id="output-word-wrap" /> Enable word-wrap <br />
+        </label>
+      </div>
+      <div class="half">
+        <div class="section-header">
+          <h2>Input</h2>
+        </div>
+        <div id="input-container"></div>
+      </div>
+      <div class="half">
+        <div class="section-header">
+          <h2>Formatted</h2>
+          <select id="output-tabs" hidden></select>
+        </div>
+        <div id="output-container"></div>
+      </div>
+    </div>
+    <noscript>This page contains webassembly and javascript content, please enable javascript in your browser.</noscript>
+  </body>
+</html>
